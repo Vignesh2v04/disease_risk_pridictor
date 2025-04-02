@@ -1,0 +1,79 @@
+/* General styles for body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Light gray background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Form container */
+form {
+    background-color: #ffffff; /* White background */
+    border: 1px solid #dddddd; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Form title */
+form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333333; /* Dark text color */
+}
+
+/* Form labels */
+form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555555; /* Medium gray text */
+    font-size: 14px;
+}
+
+/* Input fields */
+form input[type="text"],
+form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #cccccc; /* Light gray border */
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+/* Submit button */
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50; /* Green button */
+    color: white; /* White text */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Button hover effect */
+form button:hover {
+    background-color: #45a049; /* Darker green */
+}
+
+/* Links below the form */
+form a {
+    text-decoration: none;
+    color: #4CAF50; /* Green links */
+    font-size: 14px;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}
+
+form a:hover {
+    text-decoration: underline;
+}

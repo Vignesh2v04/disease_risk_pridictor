@@ -1,0 +1,281 @@
+body{
+    background-color: black;
+  }
+  .navbar { 
+      display: flex;
+     /* background-color:#C0C0C0;*/
+     background-color:skyblue; 
+      overflow: hidden; 
+      justify-content: space-between;
+      margin-top: 5PX;
+     
+    }
+     .navbar ul {
+       list-style-type: none;
+          display: flex; 
+          justify-content: flex-start;
+           align-items: center; 
+          } 
+          .navbar li { 
+            display: inline; 
+          }
+           .navbar a { 
+            display: block;
+             color: #191654; 
+             text-align: center; 
+             font-size: 1.2rem;
+             padding: 8px 20px; 
+            margin: auto;
+             text-decoration: none; 
+             font-family: 'Times New Roman', Times, serif;
+            } 
+            .navbar a:hover {
+               background-color: #ddd;
+                color:black;
+                border-radius: 20px;
+                text-decoration: underline;
+               }
+                .logo {
+                   font-size: 26px;
+                    font-weight: bold; 
+                    padding: 20px 20px;
+                    margin: auto;
+                    background: linear-gradient(to right,   #006403, #191654); 
+                    -webkit-background-clip: text;
+                     -webkit-text-fill-color: transparent;
+                      background-clip: text;
+                       color: transparent;
+                    font-family: 'Times New Roman', Times, serif;
+                  }
+                   .toggle-button{ 
+                    display: none; 
+                    cursor: pointer;
+                     font-size: 24px; 
+                     color:#191654;
+                      background: none;
+                       border: none; 
+                       padding: 14px 20px; 
+                      }
+                      .bright-mode {
+                        background-color: white;
+                        color: black;
+                    } 
+                    .mode_change{
+                      border: none;
+                      color: rgb(34, 12, 96);
+                      
+                    }
+                      
+  .home_page{
+      height: 635px;
+      margin-top: 5px;
+     
+     
+  }
+  .content_home{
+      display: flex;
+      margin: auto;
+  }
+  
+  .content_home .home-image{
+      width: 40%;
+      height: 600px;
+      margin: auto;
+    }
+  
+    .home-image img{
+      height: 550px;
+      width: 100%;
+      margin: auto;
+      text-align: end;
+      border-radius: 10px;
+      padding: 20px 40px;
+      background-color: transparent;
+      animation: verticalRotateImage 3s linear infinite;
+      /*margin-left: 40%;*/
+    }
+    
+    @keyframes verticalRotateImage {
+      from {
+        transform: rotateY(0deg); /* Start position */
+      }
+      to {
+        transform: rotateY(360deg); /* Complete vertical rotation */
+      }
+    }
+    
+    .content_home .home-content{
+      width: 60%;
+      height: 600px;
+      margin: auto;
+      text-align: center;
+  }
+  .home-content h1{
+      font-size: 3.3rem;
+      width: 80%;
+      margin-top: 100px;
+      color: rgb(5, 0, 100)
+     
+  }
+  .home-content p{
+      width: 80%;
+      font-size: 1.2rem;
+      color: #C0C0C0;
+  }
+  .container{
+    margin-top: 100px;
+    height: 40%;
+    width: 80%;
+  }
+  .options{
+    margin: auto;
+    padding: 20px 20px;
+  }
+  .options button{
+    background-color: black;
+    width: 200px;
+    height: 50px;
+    font-size: 2rem;
+    box-shadow: 0px 6px 8px rgba(255, 1, 1, 0.4);
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: wheat;
+  }
+  .options button:hover{
+    background-color: #09ff009d;
+    box-shadow: 0px 6px 10px rgba(39, 71, 254, 0.5);
+  }
+  .about{
+    margin-top: 25px;
+    height: 690px;
+  }
+  .about-content{
+    width: 60%;
+    text-align: center;
+    height: 48%;
+    margin: auto;
+    
+  }
+  .about-content h2{
+    margin-top: 10px;
+    padding: 10px 10px;
+    color: #191654;
+  }
+  .about-content p{
+    font-size: 1.2rem;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+    padding: 20px 20px;
+    color: white;
+  
+  }
+  footer{
+    margin-top: 30px;
+    background-color: skyblue; 
+    height:auto;
+    padding: 20px;
+     text-align: center;
+     
+     
+  }
+  footer p{
+    font-size: 1.2rem;
+  }
+  .clorchange p{
+    color: black;
+  }
+  .cards{
+    display: flex;
+    margin: auto;
+    text-align: center;
+    width: 50%;
+    height: auto;
+  }
+  .cards .card{
+    height: 90%;
+    width: 150px;
+    margin: auto;
+    padding: 5px 10px;
+    border: 2px solid;
+    background-color: white
+    
+  }
+  @media screen and (max-width: 720px) { 
+    .navbar ul { 
+      flex-direction: column; 
+      display: none; 
+    } 
+    .navbar ul.active {
+       display: flex;
+       }
+        .toggle-button 
+      { 
+  display: inline-block; 
+  }
+  .home_page{
+    height: 500px;
+    margin-top: 5px;
+  }
+  .content_home{
+    height: 300px;
+  }
+  .home-image img{
+    height:250px;
+    width: 50%;
+    margin:50px 10px 5px 2px ;
+    text-align: center;
+  }
+  .home-content{
+    height: auto;
+  }
+  .home-content h1{
+    font-size: 1.3rem;
+    width: 80%;
+    margin-top: 100px;
+   
+  }
+  .home-content p{
+    width: 80%;
+    font-size: 1rem;
+  
+  }
+  .container{
+    margin-top: 100px;
+    height: 40%;
+    margin-right: 8%;
+    width: 70%;
+  }
+  .options{
+    margin: auto;
+    /*padding: 20px 20px;*/
+  }
+  .options button{
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    margin-right: 20%;
+    
+  }
+  .about-content{
+    width: 80%;
+    height: auto;
+    
+  }
+  .about-content h2{
+    padding: 2px 2px;
+  }
+  .about-content p{
+    font-size: 1.1rem;
+    padding: 5px 5px;
+  
+  }
+  .cards{
+    display: inline-block;
+    margin: 5px 50px;
+    width: 70%;
+    text-align: center;
+  }
+  }
