@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=dark_mode" />
+    <link href="static/css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/prediction.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="nav_bar" id="home">
+        
+        <nav class="navbar" > 
+            <div>
+            <div class="logo">HealthRisk Predictor</div>
+        </div>
+        <div>
+             <button class="toggle-button" onclick="toggleMenu()">☰</button> 
+             <ul class="menu"> 
+                <li><a href="/">Home</a> 
+                 <li>
+                    <a class="mode_change " onclick="toggleMode()"><span class="material-symbols-outlined">
+                        dark_mode
+                        </span></a>
+                </li>
+                 </ul> 
+                </div>
+                </nav>
+    </section>
+        <div class="test">
+        <div class="container">
+            <h1>Health Risk Prediction</h1>
+            <div class="options">
+                <a href="/cvd_form" class="btn cvd-btn">CVD Prediction</a>
+                <a href="/diabetes_form" class="btn diabetes-btn">Diabetes Prediction</a>
+            </div>
+        </div>
+    </div>
+    <script src="static/js/scripts.js"> </script>
+</body>
+</html>
