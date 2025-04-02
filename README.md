@@ -23,5 +23,5 @@ A Flask-based web application that predicts diabetes risk using machine learning
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Suhen02/Byte_busters.git
-   cd Byte_busters
+   git[ clone https://github.com/Suhen02/disease_risk_pridictor.git]
+   cd disease_risk_pridictor
