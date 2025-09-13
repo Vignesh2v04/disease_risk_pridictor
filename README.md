@@ -1,4 +1,4 @@
-﻿# Disease Risk Prediction Web Application
+# Disease Risk Prediction Web Application
 ### *A project by Byte_busters25*
 
 This is a full-stack web application built with Python and Flask that uses machine learning to predict the risk of Diabetes and Cardiovascular Disease based on user-provided health metrics.
