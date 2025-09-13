@@ -6,7 +6,7 @@ import joblib
 import sqlite3
 import os,secrets
 import pandas as pd
-from flask_frozen import Freezer
+#from flask_frozen import Freezer
 
 
 
@@ -14,7 +14,7 @@ from flask_frozen import Freezer
 
 
 app = Flask(__name__)
-freezer = Freezer(app)
+#freezer = Freezer(app)
 app.secret_key = secrets.token_hex(16)  
 app.secret_key = os.getenv("SECRET_KEY", secrets.token_hex(16))
 
@@ -215,6 +215,6 @@ def predict():
 
 
 if __name__ == '__main__':
-    freezer.freeze()
+   # freezer.freeze()
     app.run(debug=True)
     
